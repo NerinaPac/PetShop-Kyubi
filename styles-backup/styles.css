@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+:root{
+    --naranja:#e07a5f;
+    --beigeClaro: #f4f1de;
+    --purpura:#3d405b;
+    --verde:#81b29a;
+    --beigeOscuro:#f2cc8f;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--naranja);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ============   HEADER  ================== */
+
+header{
+    background-color: var(--purpura);
+     
+}
+
+.textoEnvios{
+    background-color: var(--beigeClaro);
+    text-align: center;
+}
+
+.headerArriba{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 8px 0;
+    
+}
+
+.contenedorLogo{
+    max-width:260px;
+    text-align: center;    
+}
+
+.aLogo, h1{
+    font-size: 25px;
+    color: var(--beigeClaro);
+    text-decoration: none;
+    
+}
+
+.btn{
+    border: 0;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--beigeClaro);
+    
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 3px 0px;
+    cursor: pointer;
+    background-color: var(--beigeOscuro);
+    
+}
+
+.buscador{
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 1px 0px;
+}
+.buscadorInp{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.buscadorInp:focus{
+    outline: none;
+}
+
+.loginUser{
+    padding: 0 8px;
+}
+
+/* === NAVEGACION PRINCIPAL === */
+ 
+.navPpal ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navPpal a, .navPpal label{
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--beigeClaro);
+}
+
+.navPpal a:hover, .navPpal label:hover{
+    background-color: var(--beigeOscuro);
+    color: var(--purpura);
+    box-shadow: 0px 0px 2px 0px;
+    cursor: pointer;
+}
+
+#navAlimentos{
+    display: none;
+}
+
+#navAlimentos:checked ~div{
+    display: flex;
+}
+
+.menuDesplegableAlimentos {
+    background-color: var(--naranja);
+    position:absolute;
+    max-height: 200px;
+    padding: 1rem;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 3px 0px;
+    display: none;
+    
+}
+
+.menuDesplegableAlimentos ul{
+    display: block;
+}
+
+
+/* ========= CIERRE DE HEADER ====================== */
+
+/* =========== CARRUCEL  =============== */
+.carrucel{
+    background-image: url(/media/img/carrucel/carrucel01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 28rem;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    width: 100%;
+     
+}
+
+.carrucel a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.carrucel a:hover {
+    text-decoration:underline;
+}
+
+
+/* =========== SECCION CATEGORIAS ============== */
+.categorias{
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+.contenedorCategorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+
+}
+.card-cat{
+    width: 150px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+.card-cat a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-cat a:hover{
+   text-decoration: underline;
+     
+}
+
+.card-cat img{
+    border-radius: 5rem;
+}
+
+
+/* =========== productos destacados ============ */
+
+.productosDestacados{
+    padding: 1rem;
+    background-color: var(--beigeOscuro);
+}
+
+.verProductosDestacados{
+    display: inline-block;
+    font-size: 10px;
+    padding-bottom: 1rem;
+    color: black;
+    
+}
+
+.cuerpoProductosDestacados{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+}
+
+.contenedorProductosDestacados{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow:hidden;
+}
+
+.cardDestacados{
+    text-align: center;
+    border: 1px solid gray;
+    box-shadow: 0 0 2px 0;
+    padding: 1rem;
+    background-color: var(--beigeClaro);
+}
+
+.cardDestacados a{
+    color: black;
+    text-decoration: none;
+}
+
+.cardPrecios span {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.btnIzquierda, .btnDerecha{
+margin: 0;
+
+}
+
+/* ============== PELUQUERIA =============== */
+
+.peluqueria-public{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--naranja);
+    height: 30rem;
+    padding: 2rem;
+   
+}
+
+
+.peluqueria-public img{
+    width: 500px;
+}
+
+
+/* =============== SUSCRIBITE ================= */
+.suscribete{
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+    padding: 1rem;
+    
+}
+
+.suscribeteText{
+    text-align: center;
+}
+
+.suscribeteInp input{
+    height: 1.5rem;
+}
+
+
+/* =================footer ================= */
+
+footer{
+    height: 12rem;
+    background-color: var(--purpura);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    
+}
+
+.footerInfo{
+    max-width: 10rem;
+    color: var(--beigeClaro);
+}
+
+.footerInfo h5{
+    text-decoration: underline;
+}
+
+.footerInfo a{
+    color: var(--beigeClaro);
+    text-decoration: none;
+}
+
+/* ========= PAGINA CATEGORIAS ================ */
+.mainCategorias{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--beigeOscuro);
+
+}
+
+.productos{
+    max-width: 65rem;
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+}
+
+
+@media (max-width: 1050px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+

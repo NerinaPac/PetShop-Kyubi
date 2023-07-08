@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles-backup/bootstrap.css">
     <!-- estilos customizados -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles-backup/styles.css">
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             <div class="headerArriba">
                 <div class="contenedorLogo">
                     <a class="aLogo" href="index.html">
-                        <h1>🐹Pet Shop Kyubi</h1>                        
+                        <h1>🦊Pet Shop Kyubi</h1>                        
                     </a> 
                 </div> 
 
@@ -38,10 +38,10 @@
         <nav class="navPpal">
             <ul>
                 <li class="">
-                    <label for="navAlimentos">Alimentos</label>
+                    <label for="navAlimentos">Productos</label>
                     <input type="checkbox" id="navAlimentos">
-
                     <div class="menuDesplegableAlimentos">
+
                         <ul class="listaAlimentos">
                             <li>Alimentos por mascotas</li>
                             <li><a class=" href="#">Perros</a></li>
@@ -56,16 +56,26 @@
                             <li><a class="" href="#">Exellent</a></li>
                             <li><a class="" href="#">Vitalcan</a></li>
                         </ul>
+                       
                         <ul class="listaAlimentos">
-                            <li>Tipos de Alimentos</li>
-                            <li><a class="" href="#">Secos</a></li>
-                            <li><a class="" href="#">Humedos</a></li>
+                            <li>Elementos de higiene</li>
+                            <li><a class="" href="#">Piedras para gatos</a></li>
+                            <li><a class="" href="#">Shampoo y Acondicionadores</a></li>
+                            <li><a class="" href="#">Pasto sinteticos</a></li>
+                            <li><a class="" href="#">Perfumes</a></li>
+                        </ul>
+                        <ul class="listaAlimentos">
+                            <li>Jueguetes y accesorios</li>
+                            <li><a class="" href="#">Pelotas</a></li>
+                            <li><a class="" href="#">Rascadores</a></li>
+                            <li><a class="" href="#">Peceras</a></li>
+                            <li><a class="" href="#">Casas</a></li>
                         </ul>
                     </div>
 
                 </li>
                 <li>
-                    <a href="">Accesorios</a>
+                    <a href="">Nosotros</a>
                 </li>
                 <li>
                     <a href="./pages/peluqueria.html">Peluqueria</a>
@@ -106,99 +116,115 @@
         <section class="categorias container-fluid">   
             <h2 class="categoriasTitulo">Lo que buscas por Categorias!</h2>
             <div class="contenedorCategorias">
-                <div class="card-cat">
+                <div class="card-cat card">
                         <a  href="./pages/categorias.html">
                             <img src="./media/img/gatitos2.jpg" alt="">
                             Gatitos
                         </a>
                 </div>
 
-                <div class="card-cat">
+                <div class="card-cat card">
                         <a href="./pages/categorias.html">
                             <img src="./media/img/perrito2.jpg" alt="">
                             Perritos
                         </a>
                 </div>
 
-                <div class="card-cat">
+                <div class="card-cat card">
                         <a href="./pages/categorias.html">
                             <img src="./media/img/aves2.jpg" alt="">
                             Pajaritos
                         </a>
                 </div>
 
-                <div class="card-cat">
+                <div class="card-cat card">
                         <a href="./pages/categorias.html">
                             <img src="./media/img/peces.jpg" alt="">
                             Pececitos
                         </a>
+                 
                 </div>
             </div>
 
         </section>
 
         <section class="productosDestacados">
+                
             <div class="encabezadoProductosDestacados">
                 <h2>Lo mas Destacado!🤩</h2>
                 <a class="verProductosDestacados" href="">VER TODOS LOS PRODUCTOS</a>
             </div>
-            <div class="contenedorProductosDestacados">
-                <div class="cardDestacados">
-                    <a href="./pages/producto.html">           
-                        <img src="./media/img/productos/piedras-rubricat.webp" alt="">
-                        <div class="cardPrecios">
-                            <h3>Rubicat Classic</h3>
-                            <p>Piedras aglomerantes para gatos</p>
-                            <span>$500</span>
-                        </div>
-                    </a>            
+            
+            <div class="cuerpoProductosDestacados container-fluid">
+
+                <div class="btnIzquierda">
+                    <button class="btn"><</button>
+                </div>  
+                
+                <div class="contenedorProductosDestacados container-fluid">
+                    
+                    <div class="cardDestacados">
+                        <a href="./pages/producto.html">           
+                            <img src="./media/img/productos/piedras-rubricat.webp" alt="">
+                            <div class="cardPrecios">
+                                <h3>Rubicat Classic</h3>
+                                <p>Piedras aglomerantes para gatos</p>
+                                <span>$500</span>
+                            </div>
+                        </a>            
+                    </div>
+
+                    <div class="cardDestacados"> 
+                        <a href="./pages/producto.html">           
+                            <img src="./media/img/productos/piedras-rubricat.webp" alt="">
+                            <div class="cardPrecios">
+                                <h3>Rubicat Classic</h3>
+                                <p>Piedras aglomerantes para gatos</p>
+                                <span>$500</span>
+                            </div>
+                        </a>            
+                    </div>
+
+                    <div class="cardDestacados"> 
+                        <a href="./pages/producto.html">         
+                            <img src="./media/img/productos/piedras-rubricat.webp" alt="">
+                            <div class="cardPrecios">
+                                <h3>Rubicat Classic</h3>
+                                <p>Piedras aglomerantes para gatos</p>
+                                <span>$500</span>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="cardDestacados">
+                        <a href="./pages/producto.html">             
+                            <img src="./media/img/productos/piedras-rubricat.webp" alt="">
+                            <div class="cardPrecios">
+                                <h3>Rubicat Classic</h3>
+                                <p>Piedras aglomerantes para gatos</p>
+                                <span>$500</span>
+                            </div>
+                        </a> 
+                    </div>
+
+                    <div class="cardDestacados"> 
+                        <a href="./pages/producto.html">          
+                            <img src="./media/img/productos/piedras-rubricat.webp" alt="">
+                            <div class="cardPrecios">
+                                <h3>Rubicat Classic</h3>
+                                <p>Piedras aglomerantes para gatos</p>
+                                <span>$500</span>
+                            </div>
+                        </a> 
+                    </div>
+                    
                 </div>
 
-                <div class="cardDestacados"> 
-                    <a href="./pages/producto.html">           
-                        <img src="./media/img/productos/piedras-rubricat.webp" alt="">
-                        <div class="cardPrecios">
-                            <h3>Rubicat Classic</h3>
-                            <p>Piedras aglomerantes para gatos</p>
-                            <span>$500</span>
-                        </div>
-                    </a>            
-                </div>
-
-                <div class="cardDestacados"> 
-                    <a href="./pages/producto.html">         
-                        <img src="./media/img/productos/piedras-rubricat.webp" alt="">
-                        <div class="cardPrecios">
-                            <h3>Rubicat Classic</h3>
-                            <p>Piedras aglomerantes para gatos</p>
-                            <span>$500</span>
-                        </div> 
-                    </a>
-                </div>
-
-                <div class="cardDestacados">
-                    <a href="./pages/producto.html">             
-                        <img src="./media/img/productos/piedras-rubricat.webp" alt="">
-                        <div class="cardPrecios">
-                            <h3>Rubicat Classic</h3>
-                            <p>Piedras aglomerantes para gatos</p>
-                            <span>$500</span>
-                        </div>
-                    </a> 
-                </div>
-
-                <div class="cardDestacados"> 
-                    <a href="./pages/producto.html">          
-                        <img src="./media/img/productos/piedras-rubricat.webp" alt="">
-                        <div class="cardPrecios">
-                            <h3>Rubicat Classic</h3>
-                            <p>Piedras aglomerantes para gatos</p>
-                            <span>$500</span>
-                        </div>
-                    </a> 
+                <div class="btnDerecha">
+                    <button class="btn">></button>
                 </div>
             </div>
-
+            
         </section>
 
         <div class="peluqueria-public">
@@ -212,6 +238,7 @@
                 <img src="./media/img/pipi2.jpg" alt="">
             
             </div>
+            
         </div>
 
         <section class="suscribete container-fluid">
@@ -224,10 +251,12 @@
                 <button class="btn">Suscribir</button>
             </div>
 
+        </div>
+
         </section>
 
     </main>
-    <footer>
+    <footer class="container-fluid">
         
         <div class="footerInfo">
             <h5>INFORMACION</h5>
