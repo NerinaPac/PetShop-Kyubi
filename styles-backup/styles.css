@@ -315,7 +315,7 @@ footer{
     text-decoration: none;
 }
 
-/* ========= PAGINA CATEGORIAS ================ */
+/* ================================ PAGINA CATEGORIAS ============================================= */
 
 /* ======== TITULO DE PAGINA ====== */
 .contenedorTitulo{
@@ -357,7 +357,7 @@ footer{
     display: none;
 }
 
-/* ============ PAGINA DE PELUQUERIA CANINA  ========== */
+/* ====================================== PAGINA DE PELUQUERIA CANINA  ================================ */
 
 /* CONTENIDO PRINCIPAL  */
 
@@ -373,6 +373,7 @@ footer{
 
 .descripcionPeluqueria p{
     font-size: 20px;
+    text-align:center;
 }
 
 
