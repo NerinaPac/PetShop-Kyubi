@@ -87,10 +87,16 @@ header{
 
 .loginUser{
     padding: 0 8px;
+    background-color: aqua;
+    
 }
 
 /* === NAVEGACION PRINCIPAL === */
  
+.navPpal{
+    color: var(--beigeClaro);
+}
+
 .navPpal ul{
     display: flex;
     align-items: center;
@@ -125,7 +131,6 @@ header{
 .menuDesplegableAlimentos {
     background-color: var(--naranja);
     position:absolute;
-    max-height: 200px;
     padding: 1rem;
     right: 0;
     left: 0;
@@ -140,6 +145,11 @@ header{
 .menuDesplegableAlimentos ul{
     display: block;
 }
+
+.tituloListaAlimentos{
+    text-decoration: underline;
+}
+
 
 
 /* ========= CIERRE DE HEADER ====================== */
@@ -226,7 +236,6 @@ header{
 .cuerpoProductosDestacados{
     display: flex;
     align-items: center;
-    background-color: aqua;
 
 }
 
@@ -263,7 +272,7 @@ margin: 0;
 
 /* ============== PELUQUERIA =============== */
 
-.peluqueria-public{
+.peluqueriaPublic{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -273,8 +282,12 @@ margin: 0;
    
 }
 
+.peluqueriaTexto{
+padding: 1rem;
+}
 
-.peluqueria-public img{
+
+.peluqueriaPublic img{
     width: 500px;
 }
 
@@ -285,13 +298,13 @@ margin: 0;
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 1em;
     
 }
 
 .suscribeteText{
-    text-align: center;
+    text-align:center;
 }
 
 .suscribeteInp input{
@@ -302,7 +315,6 @@ margin: 0;
 /* =================footer ================= */
 
 footer{
-    height: 12rem;
     background-color: var(--purpura);
     display: flex;
     flex-wrap: wrap;
@@ -312,7 +324,7 @@ footer{
 }
 
 .footerInfo{
-    max-width: 10rem;
+    padding: 1rem;
     color: var(--beigeClaro);
 }
 
@@ -355,6 +367,10 @@ footer{
 }
 
 
+/* ========= MEDIA QUERYS  ========== */
+
+/* =========== INDEX ============= */
+
 @media (max-width: 1050px) {
 
 
@@ -362,11 +378,24 @@ footer{
 
 @media (max-width: 768px) {
 
+   
+    .peluqueriaPublic{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .suscribete{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+  
+    
 
 }
 
 @media (max-width: 480px) {
-
+    
 
 }
 

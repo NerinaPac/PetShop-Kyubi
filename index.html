@@ -16,26 +16,28 @@
                 <p>ENVIOS GRATIS EN CABA y ALREDEDORES - 5% OFF PAGANDO EN EFECTIVO</p>
             </div>
 
-            <div class="headerArriba">
-                <div class="contenedorLogo">
+            <div class="headerArriba row">
+                <div class="contenedorLogo col-md-auto">
                     <a class="aLogo" href="index.html">
                         <h1>🦊Pet Shop Kyubi</h1>                        
                     </a> 
                 </div> 
 
-                <div class="buscador">
-                    <button class="btn">🔍</button>
-                    <input class="buscadorInp" type="search">
+                <div class="buscador col-md-auto">
+                    <form action="">
+                        <button class="btn">🔍</button>
+                        <input class="buscadorInp" type="search">
+                    </form>
                 </div>
 
-                <div class="loginUser">
+                <div class="loginUser col-md-auto">
                     <button class="btn">Favoritos</button>
                     <button class="btn">login</button>
                     <button class="btn">🛒</button>
                 </div>
             </div>       
   
-        <nav class="navPpal">
+        <!-- <nav class="navPpal">
             <ul>
                 <li class="">
                     <label for="navAlimentos">Productos</label>
@@ -86,7 +88,92 @@
 
                 
             </ul>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navPpal d-flex justify-content-center">
+            <div class="container-fluid">
+              <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Peluqueria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                  </li>
+                  <li class="">
+                    <label class="labelProductos" for="navAlimentos">Productos</label>
+                    <input type="checkbox" id="navAlimentos">
+
+                    <div class="menuDesplegableAlimentos">
+
+                        <ul class="listaAlimentos">
+                            <li><a href="#">Alimentos por mascotas</a></li>
+                            <li><a class="" href="#">Perros</a></li>
+                            <li><a class=" href="#">Gatos</a></li>
+                            <li><a class=" href="#">Aves</a></li>
+                            <li><a class=" href="#">Peces</a></li>
+                        </ul>
+                        <ul class="listaAlimentos">
+                            <li><a href="#">Alimentos por Marcas</a></li>
+                            <li><a cclass="" href="#">Royal Canin</a></li>
+                            <li><a class="" href="#">Pro Plan</a></li>
+                            <li><a class="" href="#">Exellent</a></li>
+                            <li><a class="" href="#">Vitalcan</a></li>
+                        </ul>
+                       
+                        <ul class="listaAlimentos">
+                            <li><a href="#">Elementos de higiene</a></li>
+                            <li><a class="" href="#">Piedras para gatos</a></li>
+                            <li><a class="" href="#">Shampoo y Acondicionadores</a></li>
+                            <li><a class="" href="#">Pasto sinteticos</a></li>
+                            <li><a class="" href="#">Perfumes</a></li>
+                        </ul>
+                        <ul class="listaAlimentos">
+                            <li><a href="#">Jueguetes y accesorios</a></li>
+                            <li><a class="" href="#">Pelotas</a></li>
+                            <li><a class="" href="#">Rascadores</a></li>
+                            <li><a class="" href="#">Peceras</a></li>
+                            <li><a class="" href="#">Casas</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                </ul>
+            </div>
+            </div>
+          </nav>
+                    
+
+
+
+                    <!-- <a class="nav-link dropdown-toggle navPpal" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a> -->
+
+                <!--   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled navPpal ">Deshabilitado</a>
+                  </li>
+                </ul>  -->
+                
+              </div>
+            </div>
+          </nav>
 
     </header>
 
@@ -227,7 +314,7 @@
             
         </section>
 
-        <div class="peluqueria-public">
+        <div class="peluqueriaPublic">
             <div class="peluqueriaTexto">
                 <h3>Peluqueria Canina</h3>
                 <p>En nuestro local contamos con el sector de Peluqueria Canina</p>
@@ -235,7 +322,7 @@
                 <a href="./pages/peluqueria.html">Mas info</a>
             </div>
             <div class="peluqueriaImg">
-                <img src="./media/img/pipi2.jpg" alt="">
+                <img  src="./media/img/pipi2.jpg" alt="">
             
             </div>
             
@@ -243,7 +330,7 @@
 
         <section class="suscribete container-fluid">
             <div class="suscribeteText">
-                <h4>Suscribete para recibir nuestras novedades 😎👌</h4>
+                <h4>Suscribete para recibir novedades 😎👌</h4>
                 <p>Recibiras nuestras Ofertas y promociones del momento</p>
             </div>
             <div class="suscribeteInp">
@@ -259,24 +346,30 @@
     <footer class="container-fluid">
         
         <div class="footerInfo">
-            <h5>INFORMACION</h5>
-            <a>Como comprar?</a>
-            <a>Envios y Entregas</a>
-            <a>Cambios y devoluciones</a>
-            <a>Terminos y condiciones</a>
+            <ul class="listaFooter">
+                <li><h5>INFORMACION</h5></li>
+                <li><a>Como comprar?</a></li>
+                <li><a>Envios y Entregas</a></li>
+                <li><a>Cambios y devoluciones</a></li>
+                <li><a>Terminos y condiciones</a></li>
+            </ul>
         </div>
 
         <div class="footerInfo">
-            <h5>CONTACTANOS</h5>
-            <p>Tel. 11-3333-555</p>
-            <p>petshop@gmail.com</p>
-            <p>Av. Rivadavia 1235</p>
-        </div>
-        
+        <ul class="ListaFooter">
+            <li><h5>CONTACTANOS</h5></li>
+            <li><p>Tel. 11-3333-555</p></li>
+            <li><p>petshop@gmail.com</p></li>
+            <li><p>Av. Rivadavia 1235</p></li>
+            
+        </ul>
+        </div>        
         <div class="footerInfo">
-            <h5>REDES SOCIALES</h5>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
+            <ul class="ListaFooter">
+            <li><h5>REDES SOCIALES</h5></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            </ul>
         </div>
     </footer>
     <script src="./js/bootstrap.bundle.js"></script>
