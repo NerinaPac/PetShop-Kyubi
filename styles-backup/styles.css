@@ -23,6 +23,9 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+/*=============== ESTILOS DEL INDEX ======= */
+
+
 /* ============   HEADER  ================== */
 
 header{
@@ -44,6 +47,8 @@ header{
     grid-area: envios;
 }
 
+/* ========= LOGO =============== */
+
 .contenedorLogo{
     max-width:260px;
     padding: 1rem 0;
@@ -59,6 +64,7 @@ header{
     
 }
 
+/* ============= BOTONES GENERALES =========== */
 .btn{
     border: 0;
     padding: 8px;
@@ -73,6 +79,8 @@ header{
     background-color: var(--beigeOscuro);
     
 }
+
+/*  =========== BUSCADOR ================ */
 
 .buscador{
     background-color: white;
@@ -91,6 +99,8 @@ header{
     outline: none;
 }
 
+/* ========== BOTONES DE LOGEO Y CARRITO =========== */
+
 .loginUser{
     padding: 0 8px;
     max-width: 13rem;
@@ -99,7 +109,7 @@ header{
     
 }
 
-/* === NAVEGACION PRINCIPAL === */
+/* ========= NAVEGACION PRINCIPAL ========== */
  
 .navPpal{
     color: var(--beigeClaro);
@@ -107,12 +117,8 @@ header{
 }
 
 .navPpal ul{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+   list-style: none;
+    
 }
 
 .navPpal a, .navPpal label{
@@ -130,6 +136,10 @@ header{
     cursor: pointer;
 }
 
+
+
+/* ========== DESPLEGABLE CON CHECKBOX ========== */
+
 #navAlimentos{
     display: none;
 }
@@ -145,26 +155,17 @@ header{
     right: 0;
     left: 0;
     z-index: 99;
-    display: flex;
     justify-content: space-evenly;
     box-shadow: 0px 0px 3px 0px;
     display: none;
     
 }
 
-.menuDesplegableAlimentos ul{
-    display: block;
-}
-
-.tituloListaAlimentos{
-    text-decoration: underline;
-}
-
 
 
 /* ========= CIERRE DE HEADER ====================== */
 
-/* =========== SECCION CATEGORIAS ============== */
+/* =========== SECCION CATEGORIAS (SELECCION DE MASCOTAS) ============== */
 .categorias{
     padding: 80px 0;
     text-align: center;
@@ -250,10 +251,6 @@ header{
 
 }
 
-.btnIzquierda, .btnDerecha{
-margin: 0;
-
-}
 
 /* ============== PELUQUERIA =============== */
 
@@ -320,6 +317,7 @@ footer{
 
 /* ========= PAGINA CATEGORIAS ================ */
 
+/* ======== TITULO DE PAGINA ====== */
 .contenedorTitulo{
     background-color: var(--verde);
     display: flex;
@@ -328,6 +326,7 @@ footer{
     padding: 1rem;
 }
 
+/* ========== CONTENIDO PRINCIPAL ==== */
 .mainCategorias{
     display: flex;
     justify-content: space-evenly;
@@ -358,7 +357,10 @@ footer{
     display: none;
 }
 
-/* ============ pagina de peluqueria canina ========== */
+/* ============ PAGINA DE PELUQUERIA CANINA  ========== */
+
+/* CONTENIDO PRINCIPAL  */
+
 
 .descripcionPeluqueria{
     background-color: #f2cc8f;
@@ -380,6 +382,8 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+/* IMAGENES DE PELUQUERIA CANINA */
 
 .imgPeluqueria{
     display: grid;
@@ -413,7 +417,7 @@ footer{
 
 /* ========= MEDIA QUERYS  ========== */
 
-/* =========== INDEX ============= */
+
 
 @media (max-width: 1050px) {
 
@@ -422,6 +426,7 @@ footer{
 
 @media (max-width: 768px) {
 
+    /* =========== INDEX ============= */
     header{
         display: grid;
         text-align: center;
@@ -452,7 +457,7 @@ footer{
         padding: 2rem;
     }
 
-    /* ----- CATEGORIAS -------- */
+    /* ---------- PAGINA DE CATEGORIAS -------- */
 
     .mainCategorias {
         display: block;
@@ -467,9 +472,9 @@ footer{
         width: 100%;
     }
 
-    /* ====== PELUQUERIA CANINA ========== */
+    /* ====== PAGINA DE PELUQUERIA CANINA ========== */
 
-    .cuerpoPeluqueria{
+    .cuerpoPeluqueria, .imgPeluqueria{
         display: block;
         text-align: center;
     }

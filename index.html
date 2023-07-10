@@ -11,108 +11,117 @@
     <link rel="stylesheet" href="./styles-backup/styles.css">
 </head>
 <body>
+    <!--  ================= COMIENZO DE HEADER =========================== -->
     <header>
-            <div class="textoEnvios">
-                <p>ENVIOS GRATIS EN CABA y ALREDEDORES - 5% OFF PAGANDO EN EFECTIVO</p>
-            </div>
-            
-                <div class="contenedorLogo">
-                    <a class="aLogo" href="index.html">
-                        <h1>🦊Pet Shop Kyubi</h1>                        
-                    </a> 
-                </div> 
+        <div class="textoEnvios">
+            <p>ENVIOS GRATIS EN CABA y ALREDEDORES - 5% OFF PAGANDO EN EFECTIVO</p>
+        </div>
+        
+        <!-- ==== LOGO ============= -->
+        <div class="contenedorLogo">
+            <a class="aLogo" href="./index.html">
+                <h1>🦊Pet Shop Kyubi</h1>                        
+            </a> 
+        </div> 
 
-                <div class="buscador">
-                    <form action="">
-                        <button class="btn">🔍</button>
-                        <input class="buscadorInp" type="search">
-                    </form>
-                </div>
+        <!-- ==== BUSCADOR ====  -->
 
-                <div class="loginUser">
-                    <button class="btn oculto">Favoritos</button>
-                    <button class="btn">Login</button>
-                    <button class="btn">🛒</button>
-                </div>
-            
-                 
-  
+        <div class="buscador">
+            <form action="">
+                <button class="btn">🔍</button>
+                <input class="buscadorInp" type="search">
+            </form>
+        </div>
+
+        <!-- ==== BOTONES LOGUEO Y CARRITO === -->
+
+        <div class="loginUser">
+            <button class="btn oculto">Favoritos</button>
+            <button class="btn">Login</button>
+            <button class="btn">🛒</button>
+        </div>              
+
+        <!-- ===== NAVEGACION PRINCIPAL ======  -->
+
         <nav class="navbar navbar-expand-lg navPpal d-flex justify-content-center">
             <div class="container-fluid">
-              <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/peluqueria.html">Peluqueria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contactos.html">Contactos</a>
-                  </li>
-                  <li class="">
-                    <label class="labelProductos" for="navAlimentos">Productos</label>
-                    <input type="checkbox" id="navAlimentos">
+                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/peluqueria.html">Peluqueria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                        </li>
 
-                    <div class="menuDesplegableAlimentos">
+                        <!-- =======  DESPLEGABLE DE PRODUCTOS CON CHECKBOX =========  -->
 
-                        <ul class="listaAlimentos">
-                            <li><a href="./pages/categorias.html">Alimentos</a></li>
-                            <li class="oculto"><a href="./pages/categorias.html">Alimentos de Perros</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Gatos</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Aves</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Peces</a></li>
-                        </ul>
-                        <ul class="listaAlimentos">
-                            <li><a href="./pages/categorias.html">Productos por Marcas</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Royal Canin</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Pro Plan</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Exellent</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Vitalcan</a></li>
-                        </ul>
-                       
-                        <ul class="listaAlimentos">
-                            <li><a href="./pages/categorias.html">Elementos de higiene</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Piedras para gatos</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Shampoo y Acondicionadores</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Pasto sinteticos</a></li>
-                            <li  class="oculto"><a href="./pages/categorias.html">Perfumes</a></li>
-                        </ul>
-                        <ul class="listaAlimentos">
-                            <li><a href="./pages/categorias.html">Jueguetes</a></li>
-                            <li class="oculto" ><a href="./pages/categorias.html">Rascadores</a></li>
-                            <li class="oculto"><a href="./pages/categorias.html">Peceras</a></li>
-                            <li class="oculto"><a href="./pages/categorias.html">Casas</a></li>
-                        </ul>
-                    </div>
+                        <li> 
+                            <label class="labelProductos" for="navAlimentos">Productos</label>
+                            <input type="checkbox" id="navAlimentos">
 
-                </li>
+                            <div class="menuDesplegableAlimentos">
 
-                </ul>
+                                <ul class="listaAlimentos">
+                                    <li><a href="./pages/categorias.html">Alimentos</a></li>
+                                    <li class="oculto"><a href="./pages/categorias.html">Alimentos de Perros</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Gatos</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Aves</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Alimentos de Peces</a></li>
+                                </ul>
+                                <ul class="listaAlimentos">
+                                    <li><a href="./pages/categorias.html">Productos por Marcas</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Royal Canin</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Pro Plan</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Exellent</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Vitalcan</a></li>
+                                </ul>
+                            
+                                <ul class="listaAlimentos">
+                                    <li><a href="./pages/categorias.html">Elementos de higiene</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Piedras para gatos</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Shampoo y Acondicionadores</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Pasto sinteticos</a></li>
+                                    <li  class="oculto"><a href="./pages/categorias.html">Perfumes</a></li>
+                                </ul>
+                                <ul class="listaAlimentos">
+                                    <li><a href="./pages/categorias.html">Jueguetes</a></li>
+                                    <li class="oculto" ><a href="./pages/categorias.html">Rascadores</a></li>
+                                    <li class="oculto"><a href="./pages/categorias.html">Peceras</a></li>
+                                    <li class="oculto"><a href="./pages/categorias.html">Casas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-            </div>
-          </nav>
-                           
-              </div>
-            </div>
-          </nav>
+        </nav>
+        <!-- CIERRE DE NAVEGACION PRINCIPAL  -->
+        
+    </header> <!-- CIERRE DE HEADER  -->
 
-    </header>
-
+    <!-- COMIEZO DE CONTENIDO PRINCIPAL  -->
     <main>
+
+        <!-- === CARRUCEL ==== -->
+
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="...">
+                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="Un perrito sentado en un sillon">
                 </div>
                 <div class="carousel-item">
-                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="...">
+                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="Un perrito sentado en un sillon">
                  </div>
                 <div class="carousel-item">
-                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="...">
+                    <img src="./media/img/carrucel/carrucel01.jpg" class="d-block w-100" alt="Un perrito sentado en un sillon">
                 </div>                
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -123,35 +132,38 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-          </div>
-    
+        </div>
+
+        <!-- CIERRE DE CARRUCEL -->
+        
+        <!-- SECCION CATEGORIAS (SELECCION DE TIPO DE MASCOTAS) -->
         <section class="categorias container-fluid">   
             <h2 class="categoriasTitulo">Lo que buscas por Categorias!</h2>
             <div class="contenedorCategorias">
                 <div class="card-cat card">
                         <a  href="./pages/categorias.html">
-                            <img src="./media/img/gatitos2.jpg" alt="">
+                            <img src="./media/img/gatitos2.jpg" alt="un gatito animado">
                             Gatitos
                         </a>
                 </div>
 
                 <div class="card-cat card">
                         <a href="./pages/categorias.html">
-                            <img src="./media/img/perrito2.jpg" alt="">
+                            <img src="./media/img/perrito2.jpg" alt="un perrito animado">
                             Perritos
                         </a>
                 </div>
 
                 <div class="card-cat card">
                         <a href="./pages/categorias.html">
-                            <img src="./media/img/aves2.jpg" alt="">
+                            <img src="./media/img/aves2.jpg" alt="un pajarito animado">
                             Pajaritos
                         </a>
                 </div>
 
                 <div class="card-cat card">
                         <a href="./pages/categorias.html">
-                            <img src="./media/img/peces.jpg" alt="">
+                            <img src="./media/img/peces.jpg" alt="un pescadito animado">
                             Pececitos
                         </a>
                  
@@ -159,7 +171,9 @@
             </div>
 
         </section>
+        <!-- CIERRE DE CATEGORIAS (SELECCION DE TIPO DE MASCOTAS) -->
 
+        <!-- ========= PRODUCTOS DESTACADOS ======= -->
         <section class="productosDestacados">
                 
             <div class="encabezadoProductosDestacados">
@@ -177,7 +191,7 @@
                     
                     <div class="cardDestacados">
                         <a href="./pages/producto.html">           
-                            <img src="./media/img/productos/excellient.webp" alt="">
+                            <img src="./media/img/productos/excellient.webp" alt="alimento para gatos marca excellent">
                             <div class="cardPrecios">
                                 <h3>Rubicat Classic</h3>
                                 <p>Piedras aglomerantes para gatos</p>
@@ -188,7 +202,7 @@
 
                     <div class="cardDestacados"> 
                         <a href="./pages/producto.html">           
-                            <img src="./media/img/productos/felixHumedo.webp" alt="">
+                            <img src="./media/img/productos/felixHumedo.webp" alt="alimento para gatos humedo marca felix">
                             <div class="cardPrecios">
                                 <h3>Rubicat Classic</h3>
                                 <p>Piedras aglomerantes para gatos</p>
@@ -199,7 +213,7 @@
 
                     <div class="cardDestacados"> 
                         <a href="./pages/producto.html">         
-                            <img src="./media/img/productos/royalFit.webp" alt="">
+                            <img src="./media/img/productos/royalFit.webp" alt="alimento para gatos marca Royal Canning Fit">
                             <div class="cardPrecios">
                                 <h3>Rubicat Classic</h3>
                                 <p>Piedras aglomerantes para gatos</p>
@@ -210,7 +224,7 @@
 
                     <div class="cardDestacados">
                         <a href="./pages/producto.html">             
-                            <img src="./media/img/productos/piedrasSanicat.webp" alt="">
+                            <img src="./media/img/productos/piedrasSanicat.webp" alt="Piedras sanitarias para gatos SaniCat">
                             <div class="cardPrecios">
                                 <h3>Rubicat Classic</h3>
                                 <p>Piedras aglomerantes para gatos</p>
@@ -221,7 +235,7 @@
 
                     <div class="cardDestacados"> 
                         <a href="./pages/producto.html">          
-                            <img src="./media/img/productos/proplanHumedo.webp" alt="">
+                            <img src="./media/img/productos/proplanHumedo.webp" alt="Alimento humedo para gatos marca Proplan">
                             <div class="cardPrecios">
                                 <h3>Rubicat Classic</h3>
                                 <p>Piedras aglomerantes para gatos</p>
@@ -239,6 +253,10 @@
             
         </section>
 
+        <!-- ==== CIERRE DE PRODUCTOS DESTACADOS ===== -->
+
+        <!-- ==== PUBLICIDAD DE PELUQUERIA ==== -->
+
         <div class="peluqueriaPublic">
             <div class="peluqueriaTexto">
                 <h3>Peluqueria Canina</h3>
@@ -247,11 +265,15 @@
                 <a href="./pages/peluqueria.html">Mas info</a>
             </div>
             <div class="peluqueriaImg">
-                <img  src="./media/img/pipi2.jpg" alt="">
+                <img  src="./media/img/pipi2.jpg" alt="Un perrito negro dentro de un balde">
             
             </div>
             
         </div>
+
+        <!-- CIERRE DE PUBLICIDAD DE PELUQUERIA -->
+
+        <!-- SECCION SUSCRIBETE -->
 
         <section class="suscribete container-fluid">
             <div class="suscribeteText">
@@ -263,11 +285,11 @@
                 <button class="btn">Suscribir</button>
             </div>
 
-        </div>
-
         </section>
+        <!-- CIERRE DE SECCION SUSCRIBETE -->
 
-    </main>
+    </main> <!-- CIERRE DE CONTENIDO PRINCIPAL  -->
+    <!-- PIE DE PAGINA -->
     <footer class="container-fluid">
         
         <div class="footerInfo">
@@ -296,9 +318,11 @@
             <li><a href="">Instagram</a></li>
             </ul>
         </div>
-    </footer>
+    </footer> 
+    <!-- CIERRE DE PIE DE PAGINA  -->
+    
     <script src="./js/bootstrap.bundle.js"></script>
     <!-- tengo que agregar bootstrap bundle -->
-    </body>
+</body>
     
 </html>
