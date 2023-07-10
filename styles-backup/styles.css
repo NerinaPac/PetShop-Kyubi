@@ -252,6 +252,7 @@ header{
     box-shadow: 0 0 2px 0;
     padding: 1rem;
     background-color: var(--beigeClaro);
+    max-width: 18rem;
 }
 
 .cardDestacados a{
@@ -338,6 +339,15 @@ footer{
 }
 
 /* ========= PAGINA CATEGORIAS ================ */
+
+.contenedorTitulo{
+    background-color: var(--verde);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+}
+
 .mainCategorias{
     display: flex;
     justify-content: space-evenly;
@@ -355,8 +365,6 @@ footer{
 }
 
 .productos{
-    max-width: 65rem;
-    min-height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,6 +372,10 @@ footer{
     flex-wrap: wrap;
     padding: 1rem 0;
 
+}
+
+#seleccionCategorias{
+    display: none;
 }
 
 
@@ -378,7 +390,7 @@ footer{
 
 @media (max-width: 768px) {
 
-   
+  
     .peluqueriaPublic{
         flex-direction: column;
         height: auto;
@@ -389,7 +401,20 @@ footer{
         padding: 2rem;
     }
 
-  
+    /* ----- CATEGORIAS -------- */
+
+    .mainCategorias {
+        display: block;
+    }
+
+    .filtros{
+        display: none;
+    }
+
+    #seleccionCategorias{
+        display: block;
+        width: 100%;
+    }
     
 
 }
@@ -398,5 +423,7 @@ footer{
     
 
 }
+
+
 
 
