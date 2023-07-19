@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;       
+}
+
+body {
+    background-color: var(--naranja);
+    font-family: 'Nunito', sans-serif;
+
+    img{
+        max-width: 100%;
+    }
+}
