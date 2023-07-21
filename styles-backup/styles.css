@@ -12,31 +12,6 @@
 
 /* =========== productos destacados ============ */
 
-.productosDestacados{
-    padding: 4rem 1rem;
-    background-color: var(--beigeOscuro);
-}
-
-.verProductosDestacados{
-    display: inline-block;
-    font-size: 10px;
-    padding-bottom: 1rem;
-    color: black;
-    
-}
-
-.cuerpoProductosDestacados{
-    display: flex;
-    align-items: center;
-
-}
-
-.contenedorProductosDestacados{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    overflow:hidden;
-}
 
 
 

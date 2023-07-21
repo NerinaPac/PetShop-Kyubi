@@ -1,0 +1,23 @@
+.productosDestacados{
+    background-color: $beigeOscuro;
+}
+
+.verProductosDestacados{
+    background-color: antiquewhite;
+    display: inline-block;
+    font-size: 10px;
+    padding-bottom: 1rem;
+    color: black;
+    
+}
+
+
+
+.contenedorProductosDestacados{
+    background-color: aqua;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow:hidden;
+}

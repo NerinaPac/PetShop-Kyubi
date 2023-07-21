@@ -136,6 +136,27 @@ header .menuDesplegableAlimentos li {
   box-shadow: 0 0 10px 0 #3d405b;
 }
 
+.productosDestacados {
+  background-color: #f2cc8f;
+}
+
+.verProductosDestacados {
+  background-color: antiquewhite;
+  display: inline-block;
+  font-size: 10px;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.contenedorProductosDestacados {
+  background-color: aqua;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
 .cardPet {
   transition: all 0.2s;
 }
