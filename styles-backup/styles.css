@@ -8,41 +8,6 @@
 
 
 /* =========== SECCION CATEGORIAS (SELECCION DE MASCOTAS) ============== */
-.categorias{
-    padding: 80px 0;
-    text-align: center;
-    
-}
-
-.contenedorCategorias{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 3rem 0;
-
-}
-.card-cat{
-    width: 150px;
-    margin: 0 10px;
-    text-align: center;
-}
-
-
-.card-cat a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card-cat a:hover{
-   text-decoration: underline;
-     
-}
-
-.card-cat img{
-    border-radius: 5rem;
-}
 
 
 /* =========== productos destacados ============ */
@@ -73,25 +38,6 @@
     overflow:hidden;
 }
 
-.cardDestacados{
-    text-align: center;
-    border: 1px solid gray;
-    box-shadow: 0 0 2px 0;
-    padding: 1rem;
-    background-color: var(--beigeClaro);
-    max-width: 16rem;
-}
-
-.cardDestacados a{
-    color: black;
-    text-decoration: none;
-}
-
-.cardPrecios span {
-    font-weight: bold;
-    font-size: 1.5rem;
-
-}
 
 
 /* ============== PELUQUERIA =============== */
@@ -117,45 +63,12 @@ padding: 1rem;
 
 
 /* =============== SUSCRIBITE ================= */
-.suscribete{
-    background-color: var(--verde);
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap: 1rem;
-    padding: 1em;
-    
-}
 
-.suscribeteText{
-    text-align:center;
-}
-
-.suscribeteInp input{
-    height: 1.5rem;
-}
 
 
 /* =================footer ================= */
 
-footer{
-    background-color: var(--purpura);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem;
-    
-}
 
-.footerInfo{
-    padding: 1rem;
-    color: var(--beigeClaro);
-}
-
-.footerInfo a{
-    color: var(--beigeClaro);
-    text-decoration: none;
-}
 
 /* ================================ PAGINA CATEGORIAS ============================================= */
 

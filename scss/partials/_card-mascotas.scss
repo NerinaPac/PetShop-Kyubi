@@ -1,0 +1,31 @@
+.categorias{
+    text-align: center;
+    padding: 3rem 0;
+
+.contenedorCategorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    
+
+    .cardCat{
+        width: 150px;
+         margin: 0 8px;
+         text-align: center;
+         transition: all 0.2s;
+
+         a{
+            text-decoration: none;
+            color: black;
+         }
+
+         &:hover{
+            @include interaccionCards;
+         }
+     }
+
+}
+
+}

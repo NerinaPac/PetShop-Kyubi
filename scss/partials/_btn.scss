@@ -1,0 +1,15 @@
+.btn{
+    border: 0;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: $beigeClaro;
+
+    &:hover{
+        box-shadow: 0px 0px 3px 0px;
+        cursor: pointer;
+        background-color:$beigeOscuro;
+        
+    }
+    
+}
+

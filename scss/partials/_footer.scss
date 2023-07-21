@@ -1,0 +1,22 @@
+footer{
+    background-color: $purpura;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+    .footerInfo{
+        padding: 1rem;
+        color: $beigeClaro;
+
+        a{
+            color: $beigeClaro;
+            text-decoration: none;
+        }
+
+    }
+    
+    
+    
+}
+
