@@ -144,9 +144,6 @@ header .menuDesplegableAlimentos li {
   box-shadow: 0 0 10px 0 #3d405b;
 }
 
-.productosDestacados {
-  background-color: #f2cc8f;
-}
 .productosDestacados .encabezadoProductosDestacados {
   display: flex;
   justify-content: space-between;
