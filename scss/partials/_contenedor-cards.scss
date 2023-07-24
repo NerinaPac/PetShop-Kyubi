@@ -1,23 +1,45 @@
 .productosDestacados{
     background-color: $beigeOscuro;
-}
 
-.verProductosDestacados{
-    background-color: antiquewhite;
-    display: inline-block;
-    font-size: 10px;
-    padding-bottom: 1rem;
-    color: black;
+    .encabezadoProductosDestacados{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+
+        a{
+            color: black;
+        }
+
+        h2{
+            font-size: 3rem;
+        }
+    }
+
+    .cuerpoProductosDestacados{
+        display: flex;
+        
+
+        .btnProductos{
+            position: relative;
+            height: 5rem;
+            z-index: 98;
+            align-self: center;
+        }
+
+        .contenedorProductosDestacados{
+            display: flex;
+            align-items: center;
+            height: 30rem;
+            gap: 8px;
+            overflow:hidden;
+        }
+    }
     
 }
 
 
 
-.contenedorProductosDestacados{
-    background-color: aqua;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    overflow:hidden;
-}
+
+
+

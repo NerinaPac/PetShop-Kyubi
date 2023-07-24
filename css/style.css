@@ -18,6 +18,9 @@ header {
   align-items: center;
   justify-content: space-between;
   grid-template-areas: "envios envios envios" "logo buscador login" "navegacion navegacion navegacion";
+  position: sticky;
+  top: 0;
+  z-index: 99;
   /* ========= LOGO =============== */
   /*  =========== BUSCADOR ================ */
   /* ========== BOTONES DE LOGEO Y CARRITO =========== */
@@ -139,20 +142,31 @@ header .menuDesplegableAlimentos li {
 .productosDestacados {
   background-color: #f2cc8f;
 }
-
-.verProductosDestacados {
-  background-color: antiquewhite;
-  display: inline-block;
-  font-size: 10px;
-  padding-bottom: 1rem;
+.productosDestacados .encabezadoProductosDestacados {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.productosDestacados .encabezadoProductosDestacados a {
   color: black;
 }
-
-.contenedorProductosDestacados {
-  background-color: aqua;
-  height: 450px;
+.productosDestacados .encabezadoProductosDestacados h2 {
+  font-size: 3rem;
+}
+.productosDestacados .cuerpoProductosDestacados {
+  display: flex;
+}
+.productosDestacados .cuerpoProductosDestacados .btnProductos {
+  position: relative;
+  height: 5rem;
+  z-index: 98;
+  align-self: center;
+}
+.productosDestacados .cuerpoProductosDestacados .contenedorProductosDestacados {
   display: flex;
   align-items: center;
+  height: 30rem;
   gap: 8px;
   overflow: hidden;
 }
@@ -167,6 +181,20 @@ header .menuDesplegableAlimentos li {
 .cardPet:hover {
   transform: scale(1.03);
   box-shadow: 0 0 10px 0 #3d405b;
+}
+
+.peluqueriaPublic {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30rem;
+  padding: 2rem;
+}
+.peluqueriaPublic .peluqueriaTexto {
+  padding: 1rem;
+}
+.peluqueriaPublic img {
+  width: 500px;
 }
 
 .suscribete {
@@ -196,5 +224,60 @@ footer .footerInfo a {
   color: #f4f1de;
   text-decoration: none;
 }
+
+/* @media (max-width: 1050px) {
+
+
+} */
+@media (max-width: 768px) {
+  /* =========== INDEX ============= */
+  header {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: "envios envios envios" "buscador buscador buscador" "logo logo login" "navegacion navegacion navegacion";
+  }
+  header .buscador {
+    justify-self: center;
+    margin: 1rem 0;
+  }
+  header #navAlimentos:checked ~ div {
+    display: block;
+  }
+  /* ================================================ */
+  /* ================================================ */
+  .peluqueriaPublic {
+    flex-direction: column;
+    height: auto;
+  }
+  .suscribete {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  /* ---------- PAGINA DE CATEGORIAS -------- */
+  .mainCategorias {
+    display: block;
+  }
+  .oculto {
+    display: none;
+  }
+  #seleccionCategorias {
+    display: block;
+    width: 100%;
+  }
+  /* ====== PAGINA DE PELUQUERIA CANINA ========== */
+  .cuerpoPeluqueria, .imgPeluqueria {
+    display: block;
+    text-align: center;
+  }
+  .infoPeluqueria {
+    margin: auto;
+    height: auto;
+  }
+}
+/* @media (max-width: 480px) {
+
+
+} */
 
 /*# sourceMappingURL=style.css.map */

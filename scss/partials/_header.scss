@@ -8,6 +8,9 @@ header{
     "envios envios envios"
     "logo buscador login"
     "navegacion navegacion navegacion";
+    position: sticky;
+    top: 0;
+    z-index: 99;
 
     .textoEnvios{
         background-color:$beigeClaro;
