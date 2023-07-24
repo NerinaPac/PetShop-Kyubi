@@ -6,6 +6,10 @@
 @media (max-width: 768px) {
 
     /* =========== INDEX ============= */
+    p,a{
+        font-size: $letrasMobile;
+    }
+
     header{
         display: grid;
         text-align: center;
@@ -16,7 +20,7 @@
         "logo logo login"
         "navegacion navegacion navegacion";
 
-        .buscador{
+       .buscador{
             justify-self: center;
             margin: 1rem 0;
         }
@@ -26,21 +30,88 @@
         }
     }
 
+
+    .textoEnvios{
+        p{
+            font-size: 1rem;
+            border: 2px dashed $beigeClaro;
+        }
+    }
     /* ================================================ */
 
-   
+    .categorias{
+        h2{
+            font-size: $titulosMobile;
+        }
+    }
+
+/* ================ */
+
+    .encabezadoProductosDestacados{
+       flex-direction: column;
+
+       a{
+            align-self: end;
+            font-size: $letrasMobile;
+        }
+
+              
+       
+    }
+
+    .contenedorProductosDestacados{
+        max-height: 20rem;
+
+        
+
+        .cardPet{
+            width: 10rem;
+            height: 18rem;
+
+            p{
+                font-size: 12px;
+            }
+        }
+
+    }
+
+       
 /* ================================================ */
    
     .peluqueriaPublic{
         flex-direction: column;
         height: auto;
+        .peluqueriaTexto{
+            text-align: center;
+        
+        h3{
+            font-size: $titulosMobile;
+        }
+
+    }
     }
 
     .suscribete{
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1rem;
+        h4{
+            font-size: $titulosMobile;
+        }
+    
     }
 
+    /*============== footer ================ */
+    footer{
+        text-align: center;
+        padding: 0;
+
+        .footerInfo{
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+
+    
     /* ---------- PAGINA DE CATEGORIAS -------- */
 
     .mainCategorias {

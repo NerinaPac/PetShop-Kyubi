@@ -6,13 +6,33 @@ footer{
     padding: 1rem;
 
     .footerInfo{
+        width: 20rem;
         padding: 1rem;
         color: $beigeClaro;
 
-        a{
-            color: $beigeClaro;
-            text-decoration: none;
+        ul{
+            padding: 0;
+
+            li{
+                list-style: none;
+                
+               
+     
+                a{
+                 color: $beigeClaro;
+                 text-decoration: none;
+                
+             }
+             
+             }
+
+
+
         }
+
+        
+
+       
 
     }
     

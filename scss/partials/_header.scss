@@ -4,19 +4,14 @@ header{
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-areas: 
-    "envios envios envios"
+    grid-template-areas:
     "logo buscador login"
     "navegacion navegacion navegacion";
     position: sticky;
     top: 0;
     z-index: 99;
 
-    .textoEnvios{
-        background-color:$beigeClaro;
-        text-align: center;
-        grid-area: envios;
-    }
+    
 
     /* ========= LOGO =============== */
 

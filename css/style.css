@@ -17,7 +17,7 @@ header {
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-areas: "envios envios envios" "logo buscador login" "navegacion navegacion navegacion";
+  grid-template-areas: "logo buscador login" "navegacion navegacion navegacion";
   position: sticky;
   top: 0;
   z-index: 99;
@@ -26,11 +26,6 @@ header {
   /* ========== BOTONES DE LOGEO Y CARRITO =========== */
   /* ========= NAVEGACION PRINCIPAL ========== */
   /* ========== DESPLEGABLE CON CHECKBOX ========== */
-}
-header .textoEnvios {
-  background-color: #f4f1de;
-  text-align: center;
-  grid-area: envios;
 }
 header .contenedorLogo {
   max-width: 260px;
@@ -101,6 +96,16 @@ header .menuDesplegableAlimentos li {
   list-style: none;
 }
 
+.textoEnvios {
+  text-align: center;
+  padding: 1rem;
+}
+.textoEnvios p {
+  color: #f4f1de;
+  font-size: 40px;
+  border: 5px dashed #f4f1de;
+}
+
 .btn {
   border: 0;
   padding: 8px;
@@ -115,7 +120,7 @@ header .menuDesplegableAlimentos li {
 
 .categorias {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .categorias .contenedorCategorias {
   display: flex;
@@ -152,7 +157,7 @@ header .menuDesplegableAlimentos li {
   color: black;
 }
 .productosDestacados .encabezadoProductosDestacados h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .productosDestacados .cuerpoProductosDestacados {
   display: flex;
@@ -173,6 +178,7 @@ header .menuDesplegableAlimentos li {
 
 .cardPet {
   transition: all 0.2s;
+  width: 17rem;
 }
 .cardPet a {
   text-decoration: none;
@@ -217,10 +223,17 @@ footer {
   padding: 1rem;
 }
 footer .footerInfo {
+  width: 20rem;
   padding: 1rem;
   color: #f4f1de;
 }
-footer .footerInfo a {
+footer .footerInfo ul {
+  padding: 0;
+}
+footer .footerInfo ul li {
+  list-style: none;
+}
+footer .footerInfo ul li a {
   color: #f4f1de;
   text-decoration: none;
 }
@@ -231,6 +244,9 @@ footer .footerInfo a {
 } */
 @media (max-width: 768px) {
   /* =========== INDEX ============= */
+  p, a {
+    font-size: 20px;
+  }
   header {
     display: grid;
     text-align: center;
@@ -244,15 +260,58 @@ footer .footerInfo a {
   header #navAlimentos:checked ~ div {
     display: block;
   }
+  .textoEnvios p {
+    font-size: 1rem;
+    border: 2px dashed #f4f1de;
+  }
   /* ================================================ */
+  .categorias h2 {
+    font-size: 35px;
+  }
+  /* ================ */
+  .encabezadoProductosDestacados {
+    flex-direction: column;
+  }
+  .encabezadoProductosDestacados a {
+    align-self: end;
+    font-size: 20px;
+  }
+  .contenedorProductosDestacados {
+    max-height: 20rem;
+  }
+  .contenedorProductosDestacados .cardPet {
+    width: 10rem;
+    height: 18rem;
+  }
+  .contenedorProductosDestacados .cardPet p {
+    font-size: 12px;
+  }
   /* ================================================ */
   .peluqueriaPublic {
     flex-direction: column;
     height: auto;
   }
+  .peluqueriaPublic .peluqueriaTexto {
+    text-align: center;
+  }
+  .peluqueriaPublic .peluqueriaTexto h3 {
+    font-size: 35px;
+  }
   .suscribete {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 1rem;
+  }
+  .suscribete h4 {
+    font-size: 35px;
+  }
+  /*============== footer ================ */
+  footer {
+    text-align: center;
+    padding: 0;
+  }
+  footer .footerInfo {
+    text-align: center;
+    padding: 1rem 0;
   }
   /* ---------- PAGINA DE CATEGORIAS -------- */
   .mainCategorias {
