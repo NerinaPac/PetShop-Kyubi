@@ -3,45 +3,7 @@
 
 /* ================================ PAGINA CATEGORIAS ============================================= */
 
-/* ======== TITULO DE PAGINA ====== */
-.contenedorTitulo{
-    background-color: var(--verde);
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 1rem;
-}
 
-/* ========== CONTENIDO PRINCIPAL ==== */
-.mainCategorias{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-
-.filtros{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: var(--beigeOscuro);
-
-}
-
-.productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-
-}
-
-#seleccionCategorias{
-    display: none;
-}
 
 /* ====================================== PAGINA DE PELUQUERIA CANINA  ================================ */
 
