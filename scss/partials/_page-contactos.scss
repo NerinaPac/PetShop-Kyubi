@@ -1,0 +1,32 @@
+.titulosContactos{
+    background-color: aquamarine;
+    height: 200px;
+}
+
+
+.mainContactos{
+    display: flex;
+    justify-content:space-around;
+.direcciones{
+    background-color:cadetblue;
+
+}
+
+.formContactos{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 1rem;
+
+    .checkSeguridad{
+        padding: 1rem;
+        text-align: center;
+        margin: 1rem;
+       
+    }
+
+
+
+}
+}

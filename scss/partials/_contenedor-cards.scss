@@ -17,6 +17,7 @@
 
     .cuerpoProductosDestacados{
         display: flex;
+        align-items: center;
         
 
         .btnProductos{
@@ -26,18 +27,28 @@
             align-self: center;
         }
 
-        .contenedorProductosDestacados{
-            display: flex;
-            align-items: center;
-            height: 30rem;
-            gap: 8px;
-            overflow:hidden;
-        }
+        
+        
     }
     
 }
 
+.contenedorProductosDestacados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    gap: 8px;
+    overflow:hidden;
+}
 
+.contenedorCategoriasProductos{
+    @extend .contenedorProductosDestacados;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding: 1rem;
+}
 
 
 

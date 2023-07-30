@@ -102,9 +102,10 @@ header .menuDesplegableAlimentos li {
   padding: 1rem;
 }
 .textoEnvios p {
-  color: #f4f1de;
+  color: black;
   font-size: 30px;
-  border: 5px dashed #f4f1de;
+  background-color: #f4f1de;
+  padding: 1rem;
 }
 
 .btn {
@@ -159,6 +160,7 @@ header .menuDesplegableAlimentos li {
 }
 .productosDestacados .cuerpoProductosDestacados {
   display: flex;
+  align-items: center;
 }
 .productosDestacados .cuerpoProductosDestacados .btnProductos {
   position: relative;
@@ -166,12 +168,21 @@ header .menuDesplegableAlimentos li {
   z-index: 98;
   align-self: center;
 }
-.productosDestacados .cuerpoProductosDestacados .contenedorProductosDestacados {
+
+.contenedorProductosDestacados, .contenedorCategoriasProductos {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 30rem;
   gap: 8px;
   overflow: hidden;
+}
+
+.contenedorCategoriasProductos {
+  height: auto;
+  flex-wrap: wrap;
+  overflow: visible;
+  padding: 1rem;
 }
 
 .cardPet {
@@ -240,17 +251,23 @@ footer .footerInfo ul li a {
 /* ======== TITULO DE PAGINA ====== */
 .contenedorTitulo {
   background-image: url(../media/img/gato-categoria.jpg);
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
-  padding: 1rem;
+  height: 16rem;
+}
+.contenedorTitulo h2 {
+  color: #f4f1de;
+  text-shadow: 0 0 3px black;
 }
 
 /* ========== CONTENIDO PRINCIPAL ==== */
 .mainCategorias {
   display: flex;
+  height: auto;
   justify-content: space-evenly;
 }
 
@@ -259,7 +276,6 @@ footer .footerInfo ul li a {
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-  background-color: var(--beigeOscuro);
 }
 
 .productos {
@@ -273,6 +289,73 @@ footer .footerInfo ul li a {
 
 #seleccionCategorias {
   display: none;
+}
+
+/* ========== PAGE PELUQUERIA ========= */
+/* CONTENIDO PRINCIPAL  */
+.descripcionPeluqueria {
+  background-color: #f2cc8f;
+  padding: 1rem 2rem;
+}
+.descripcionPeluqueria h2 {
+  text-align: center;
+}
+.descripcionPeluqueria p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.cuerpoPeluqueria {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.cuerpoPeluqueria .imgPeluqueria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 55rem;
+  padding: 1rem;
+}
+.cuerpoPeluqueria .imgPeluqueria img {
+  box-shadow: 0 0 5px 0;
+}
+.cuerpoPeluqueria .infoPeluqueria {
+  max-width: 30rem;
+  height: 15rem;
+  padding: 2rem;
+  background-color: #81b29a;
+  box-shadow: 0 0 5px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* ================== PAGE CONTACTOS ========== */
+.titulosContactos {
+  background-color: aquamarine;
+  height: 200px;
+}
+
+.mainContactos {
+  display: flex;
+  justify-content: space-around;
+}
+.mainContactos .direcciones {
+  background-color: cadetblue;
+}
+.mainContactos .formContactos {
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 1rem;
+}
+.mainContactos .formContactos .checkSeguridad {
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 /* ===== MEDIAQUERYS ==== */
@@ -314,14 +397,14 @@ footer .footerInfo ul li a {
     align-self: end;
     font-size: 20px;
   }
-  .contenedorProductosDestacados {
+  .contenedorProductosDestacados, .contenedorCategoriasProductos {
     max-height: 20rem;
   }
-  .contenedorProductosDestacados .cardPet {
+  .contenedorProductosDestacados .cardPet, .contenedorCategoriasProductos .cardPet {
     width: 10rem;
     height: 18rem;
   }
-  .contenedorProductosDestacados .cardPet p {
+  .contenedorProductosDestacados .cardPet p, .contenedorCategoriasProductos .cardPet p {
     font-size: 12px;
   }
   /* ================================================ */
@@ -354,6 +437,13 @@ footer .footerInfo ul li a {
   /* ---------- PAGINA DE CATEGORIAS -------- */
   .mainCategorias {
     display: block;
+  }
+  .contenedorCategoriasProductos {
+    height: auto;
+  }
+  .contenedorCategoriasProductos {
+    height: 1000px;
+    background-color: aqua;
   }
   .oculto {
     display: none;

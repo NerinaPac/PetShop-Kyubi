@@ -54,15 +54,11 @@
             align-self: end;
             font-size: $letrasMobile;
         }
-
-              
        
     }
 
     .contenedorProductosDestacados{
-        max-height: 20rem;
-
-        
+        max-height: 20rem;       
 
         .cardPet{
             width: 10rem;
@@ -117,6 +113,16 @@
     .mainCategorias {
         display: block;
     }
+
+    .contenedorCategoriasProductos{
+        height: auto;
+    }
+
+    .contenedorCategoriasProductos{
+       height:1000px;
+       background-color: aqua;
+    }
+
 
     .oculto{
         display: none;
