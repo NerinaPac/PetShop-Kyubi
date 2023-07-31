@@ -506,7 +506,7 @@ footer .footerInfo ul li a {
 
 
 } */
-@media (max-width: 284px) {
+@media (max-width: 480px) {
   /* =========== HEADER ========== */
   /*============ BUSCADOR  ============== */
   .buscadorInp {
