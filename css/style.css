@@ -6,11 +6,15 @@
 }
 
 body {
-  background-color: #e07a5f;
+  background: rgb(224, 122, 95);
+  background: linear-gradient(180deg, rgb(224, 122, 95) 0%, rgb(242, 204, 143) 40%, rgb(244, 241, 222) 100%);
   font-family: "Nunito", sans-serif;
 }
 body img {
   max-width: 100%;
+}
+body p {
+  font-size: 1rem;
 }
 
 header {
@@ -112,7 +116,7 @@ header .menuDesplegableAlimentos li {
   border: 0;
   padding: 8px;
   border-radius: 15px;
-  background-color: #f4f1de;
+  background-color: #e07a5f;
 }
 .btn:hover {
   box-shadow: 0px 0px 3px 0px;
@@ -341,12 +345,18 @@ footer .footerInfo ul li a {
 .mainContactos {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .mainContactos .direcciones {
-  background-color: cadetblue;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+.mainContactos .direcciones iframe {
+  max-width: 25rem;
+  height: 20rem;
 }
 .mainContactos .formContactos {
-  background-color: chocolate;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -356,6 +366,36 @@ footer .footerInfo ul li a {
   padding: 1rem;
   text-align: center;
   margin: 1rem;
+  background-color: gray;
+}
+
+/* ================ PAGE NOSOTROS ========= */
+.presentacion {
+  padding: 1rem 10rem;
+}
+.presentacion .presentacionText {
+  text-align: justify;
+  padding: 0;
+  margin: auto;
+}
+.presentacion .presentacionText p {
+  padding: 1rem;
+}
+.presentacion img {
+  min-width: 300px;
+}
+
+.nosotrosInfo {
+  background-color: aqua;
+  padding: 4rem;
+}
+.nosotrosInfo .nosotrosDirecciones {
+  margin: auto;
+  text-align: center;
+}
+.nosotrosInfo iframe {
+  width: 500px;
+  height: 400px;
 }
 
 /* ===== MEDIAQUERYS ==== */
@@ -466,5 +506,12 @@ footer .footerInfo ul li a {
 
 
 } */
+@media (max-width: 284px) {
+  /* =========== HEADER ========== */
+  /*============ BUSCADOR  ============== */
+  .buscadorInp {
+    width: 100px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
