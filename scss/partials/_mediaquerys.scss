@@ -148,9 +148,14 @@
 
     }
     
+/* ======================== NOSOTROS ================ */
 
+    .nosotrosInfo{
+        display: block;    
+        }
+    
+    }
 
-}
 
 /* @media (max-width: 480px) {
     
@@ -165,7 +170,28 @@
     .buscadorInp{
         width: 100px;
     }
-    
 
+
+    /* ======================== NOSOTROS ================ */
+
+            
+    }
+
+
+
+
+
+/* ============ NOSOTROS ========= */
+
+@media (max-width: 950px) {
+
+.presentacion{
+    padding: 1rem 1rem;
+    
 }
 
+
+
+
+
+}

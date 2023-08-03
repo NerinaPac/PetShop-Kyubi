@@ -346,30 +346,32 @@ footer .footerInfo ul li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
 }
 .mainContactos .direcciones {
   display: flex;
-  padding: 1rem;
-  justify-content: center;
+  justify-content: space-around;
 }
-.mainContactos .direcciones iframe {
-  max-width: 25rem;
-  height: 20rem;
+.mainContactos iframe {
+  max-width: 30rem;
+  max-height: 20rem;
 }
 .mainContactos .formContactos {
   display: flex;
   flex-direction: column;
   width: 500px;
-  padding: 1rem;
 }
 .mainContactos .formContactos .checkSeguridad {
-  padding: 1rem;
   text-align: center;
-  margin: 1rem;
-  background-color: gray;
+  padding: 1rem;
 }
 
 /* ================ PAGE NOSOTROS ========= */
+.nosotrosTitulo {
+  padding: 2rem;
+  text-align: center;
+}
+
 .presentacion {
   padding: 1rem 10rem;
 }
@@ -386,16 +388,23 @@ footer .footerInfo ul li a {
 }
 
 .nosotrosInfo {
+  display: flex;
+  gap: 1rem;
   background-color: aqua;
-  padding: 4rem;
+  padding: 1rem;
 }
 .nosotrosInfo .nosotrosDirecciones {
   margin: auto;
   text-align: center;
 }
-.nosotrosInfo iframe {
-  width: 500px;
-  height: 400px;
+.nosotrosInfo .nosotrosMapa {
+  background-color: chartreuse;
+  max-width: 350px;
+  margin: auto;
+}
+.nosotrosInfo .nosotrosMapa iframe {
+  max-width: 100%;
+  height: 250px;
 }
 
 /* ===== MEDIAQUERYS ==== */
@@ -501,6 +510,10 @@ footer .footerInfo ul li a {
     margin: auto;
     height: auto;
   }
+  /* ======================== NOSOTROS ================ */
+  .nosotrosInfo {
+    display: block;
+  }
 }
 /* @media (max-width: 480px) {
 
@@ -511,6 +524,13 @@ footer .footerInfo ul li a {
   /*============ BUSCADOR  ============== */
   .buscadorInp {
     width: 100px;
+  }
+  /* ======================== NOSOTROS ================ */
+}
+/* ============ NOSOTROS ========= */
+@media (max-width: 950px) {
+  .presentacion {
+    padding: 1rem 1rem;
   }
 }
 

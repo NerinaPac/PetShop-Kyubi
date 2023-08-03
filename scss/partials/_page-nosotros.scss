@@ -1,3 +1,9 @@
+.nosotrosTitulo{
+    padding: 2rem;
+    text-align: center;
+}
+
+
 .presentacion{
     padding: 1rem 10rem;
   
@@ -20,16 +26,25 @@
 }
 
 .nosotrosInfo{
+    display: flex;
+    gap: 1rem;
     background-color: aqua;
-    padding: 4rem;
+    padding: 1rem;
 
     .nosotrosDirecciones{
         margin: auto;
         text-align: center;
     }
+    
+    .nosotrosMapa{
+    background-color: chartreuse;
+    max-width: 350px;
+    margin: auto;
 
     iframe{
-        width: 500px;
-        height: 400px;
+        max-width: 100%;
+        height: 250px;
     }
+    }
+    
 }
