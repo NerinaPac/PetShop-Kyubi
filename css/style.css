@@ -13,7 +13,7 @@ body {
 body img {
   max-width: 100%;
 }
-body p {
+body p, body a, body label {
   font-size: 1rem;
 }
 
@@ -344,22 +344,25 @@ footer .footerInfo ul li a {
 
 .mainContactos {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 .mainContactos .direcciones {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 .mainContactos iframe {
-  max-width: 30rem;
-  max-height: 20rem;
+  max-width: 25rem;
+  height: 20rem;
 }
 .mainContactos .formContactos {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 25rem;
+}
+.mainContactos .formContactos label {
+  padding: 0.5rem;
 }
 .mainContactos .formContactos .checkSeguridad {
   text-align: center;
@@ -389,18 +392,16 @@ footer .footerInfo ul li a {
 
 .nosotrosInfo {
   display: flex;
-  gap: 1rem;
-  background-color: aqua;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 .nosotrosInfo .nosotrosDirecciones {
   margin: auto;
   text-align: center;
 }
 .nosotrosInfo .nosotrosMapa {
-  background-color: chartreuse;
   max-width: 350px;
-  margin: auto;
+  margin: 1rem auto;
+  border: 16px solid #81b29a;
 }
 .nosotrosInfo .nosotrosMapa iframe {
   max-width: 100%;
@@ -412,6 +413,34 @@ footer .footerInfo ul li a {
 
 
 } */
+@media (max-width: 950px) {
+  .presentacion {
+    padding: 1rem 1rem;
+  }
+  /* ============= PAGE CONTACTOS =============== */
+  .mainContactos {
+    display: block;
+  }
+  .mainContactos .formContactos {
+    margin: auto;
+    width: 70%;
+  }
+  .mainContactos .contactoInfo {
+    padding-top: 5rem;
+  }
+  .mainContactos .direcciones {
+    justify-content: space-evenly;
+  }
+  .mainContactos .contactosMapa {
+    margin: auto;
+    text-align: center;
+    background-color: aquamarine;
+  }
+  .mainContactos .contactosMapa iframe {
+    padding-top: 1rem;
+    max-width: 100%;
+  }
+}
 @media (max-width: 768px) {
   /* =========== INDEX ============= */
   p, a {
@@ -520,18 +549,24 @@ footer .footerInfo ul li a {
 
 } */
 @media (max-width: 480px) {
+  p, a, label {
+    font-size: 20px;
+  }
   /* =========== HEADER ========== */
   /*============ BUSCADOR  ============== */
   .buscadorInp {
     width: 100px;
   }
-  /* ======================== NOSOTROS ================ */
-}
-/* ============ NOSOTROS ========= */
-@media (max-width: 950px) {
-  .presentacion {
-    padding: 1rem 1rem;
+  /* ========================PAGE CONTACTOS ================ */
+  .mainContactos .formContactos {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .mainContactos .direcciones {
+    display: block;
+    text-align: center;
   }
 }
+/* ============ NOSOTROS ========= */
 
 /*# sourceMappingURL=style.css.map */

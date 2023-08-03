@@ -27,9 +27,7 @@
 
 .nosotrosInfo{
     display: flex;
-    gap: 1rem;
-    background-color: aqua;
-    padding: 1rem;
+    padding: 3rem 1rem;
 
     .nosotrosDirecciones{
         margin: auto;
@@ -37,9 +35,9 @@
     }
     
     .nosotrosMapa{
-    background-color: chartreuse;
     max-width: 350px;
-    margin: auto;
+    margin: 1rem auto;    
+    border: 16px solid $verde;
 
     iframe{
         max-width: 100%;
