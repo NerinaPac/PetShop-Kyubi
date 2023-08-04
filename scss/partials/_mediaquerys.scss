@@ -197,8 +197,20 @@
     .nosotrosInfo{
         display: block;    
         }
+
+
+
+
+    /* ============= CONTACTOS ============= */
+
+    .titulosContactos{
+    
+        background-image: url(../media/img/fondo-perro-760.jpg);
+    }
     
     }
+
+    
 
 
 /* @media (max-width: 480px) {
@@ -221,6 +233,11 @@
 
 
     /* ========================PAGE CONTACTOS ================ */
+    .titulosContactos{
+        padding: 0;
+        justify-content: center;
+    }
+    
     .mainContactos{
         .formContactos{
             width: 100%;

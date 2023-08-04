@@ -1,7 +1,19 @@
 .titulosContactos{
     
     background-color: aquamarine;
-    height: 200px;
+    background-image: url(../media/img/fondo-perro.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+    h2{
+        color: $beigeClaro;
+        padding: 0 5rem;
+    }
+
 }
 
 
@@ -9,6 +21,11 @@
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
+
+    h3{
+        text-align: center;
+        padding: 1rem;
+    }
 
     .direcciones{
        display: flex;

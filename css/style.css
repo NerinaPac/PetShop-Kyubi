@@ -339,12 +339,26 @@ footer .footerInfo ul li a {
 /* ================== PAGE CONTACTOS ========== */
 .titulosContactos {
   background-color: aquamarine;
-  height: 200px;
+  background-image: url(../media/img/fondo-perro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.titulosContactos h2 {
+  color: #f4f1de;
+  padding: 0 5rem;
 }
 
 .mainContactos {
   display: flex;
   justify-content: space-evenly;
+  padding: 1rem;
+}
+.mainContactos h3 {
+  text-align: center;
   padding: 1rem;
 }
 .mainContactos .direcciones {
@@ -542,6 +556,10 @@ footer .footerInfo ul li a {
   .nosotrosInfo {
     display: block;
   }
+  /* ============= CONTACTOS ============= */
+  .titulosContactos {
+    background-image: url(../media/img/fondo-perro-760.jpg);
+  }
 }
 /* @media (max-width: 480px) {
 
@@ -557,6 +575,10 @@ footer .footerInfo ul li a {
     width: 100px;
   }
   /* ========================PAGE CONTACTOS ================ */
+  .titulosContactos {
+    padding: 0;
+    justify-content: center;
+  }
   .mainContactos .formContactos {
     width: 100%;
     padding: 0 1rem;
