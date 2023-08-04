@@ -298,7 +298,6 @@ footer .footerInfo ul li a {
 /* ========== PAGE PELUQUERIA ========= */
 /* CONTENIDO PRINCIPAL  */
 .descripcionPeluqueria {
-  background-color: #f2cc8f;
   padding: 1rem 2rem;
 }
 .descripcionPeluqueria h2 {
@@ -328,17 +327,18 @@ footer .footerInfo ul li a {
 }
 .cuerpoPeluqueria .infoPeluqueria {
   max-width: 30rem;
-  height: 15rem;
   padding: 2rem;
   background-color: #81b29a;
   box-shadow: 0 0 5px 0;
   font-size: 25px;
   text-align: center;
 }
+.cuerpoPeluqueria .infoPeluqueria span {
+  font-weight: bold;
+}
 
 /* ================== PAGE CONTACTOS ========== */
 .titulosContactos {
-  background-color: aquamarine;
   background-image: url(../media/img/fondo-perro.jpg);
   background-size: cover;
   background-position: center;
@@ -350,6 +350,7 @@ footer .footerInfo ul li a {
 .titulosContactos h2 {
   color: #f4f1de;
   padding: 0 5rem;
+  text-shadow: 0 0 15px black;
 }
 
 .mainContactos {
@@ -577,7 +578,9 @@ footer .footerInfo ul li a {
   /* ========================PAGE CONTACTOS ================ */
   .titulosContactos {
     padding: 0;
-    justify-content: center;
+    background-image: url(../media/img/fondo-perro-460.jpg);
+    background-position: center;
+    height: 200px;
   }
   .mainContactos .formContactos {
     width: 100%;
