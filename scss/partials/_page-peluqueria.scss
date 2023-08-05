@@ -18,15 +18,14 @@
 .cuerpoPeluqueria{
     display: flex;
     gap: 1rem;
+    padding: 1rem 2rem;
     justify-content: space-around;
     align-items: center;
 
     .imgPeluqueria{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
-        max-width: 55rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
         padding: 1rem;
         
         img{

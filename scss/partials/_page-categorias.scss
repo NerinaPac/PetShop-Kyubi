@@ -21,26 +21,33 @@
     display: flex;
     height: auto;
     justify-content: space-evenly;
+
+    .filtros{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;  
+    
+    }
+
+    #seleccionCategorias{
+        display: none;
+    }
+
+    .contenedorCategoriasProductos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+
+
 }
 
-.filtros{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;  
 
-}
 
-.productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem 0;
 
-}
 
-#seleccionCategorias{
-    display: none;
-}

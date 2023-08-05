@@ -6,6 +6,8 @@
 
 @media (max-width: 950px) {
 
+    /* ============ PAGE NOSOTROS =================== */
+
     .presentacion{
         padding: 1rem 1rem;
         
@@ -26,34 +28,33 @@
         }
     
         .direcciones{
-            justify-content: space-evenly;
-            
-    
-            
+            justify-content: space-evenly; 
         }
+
         .contactosMapa{
             margin:auto;
             text-align: center;
+
             iframe{
                 padding-top: 1rem;
                 max-width: 100%;
     
-                    }
+            }
         }
     }
     
        
-    }
+} /* ====== CIERRE DE MEDIA MAX-WIDTH 950 PX ====== */
 
 
 
 @media (max-width: 768px) {
 
-    /* =========== INDEX ============= */
+  
     p,a{
         font-size: $letrasMobile;
     }
-
+    /* === HEADER GENERAL  === */
     header{
         display: grid;
         text-align: center;
@@ -67,8 +68,6 @@
        .buscador{
             justify-self: center;
             margin: 1rem 0;
-
-           
         }
 
         #navAlimentos:checked ~div{
@@ -83,7 +82,9 @@
             border: 2px dashed $beigeClaro;
         }
     }
-    /* ================================================ */
+    /*  CIERRE HEADER */
+
+    /* PAGINA DE HOME  */
 
     .categorias{
         h2{
@@ -91,7 +92,6 @@
         }
     }
 
-/* ================ */
 
     .encabezadoProductosDestacados{
        flex-direction: column;
@@ -104,21 +104,20 @@
     }
 
     .contenedorProductosDestacados{
-        max-height: 20rem;       
+        max-height: 20rem; 
 
-        .cardPet{
-            width: 10rem;
-            height: 18rem;
+    }
+    
+    .cardPet{
+        width: 10rem;
+        height: 19rem;
 
-            p{
-                font-size: 12px;
-            }
+        p{
+            font-size: 12px;
         }
-
     }
 
        
-/* ================================================ */
    
     .peluqueriaPublic{
         flex-direction: column;
@@ -126,11 +125,11 @@
         .peluqueriaTexto{
             text-align: center;
         
-        h3{
-            font-size: $titulosMobile;
-        }
+            h3{
+                font-size: $titulosMobile;
+            }
 
-    }
+        }
     }
 
     .suscribete{
@@ -142,7 +141,7 @@
     
     }
 
-    /*============== footer ================ */
+    /* FOOTER GENERAL */
     footer{
         text-align: center;
         padding: 0;
@@ -154,32 +153,23 @@
     }
 
     
-    /* ---------- PAGINA DE CATEGORIAS -------- */
+    /*PAGINA DE CATEGORIAS*/
 
-    .mainCategorias {
+    .mainCategorias {  
         display: block;
+
+        .oculto{
+            display: none;
+        }
+
+        #seleccionCategorias{
+            display: block;
+            width: 100%;
+        }
     }
 
-    .contenedorCategoriasProductos{
-        height: auto;
-    }
 
-    .contenedorCategoriasProductos{
-       height:1000px;
-       background-color: aqua;
-    }
-
-
-    .oculto{
-        display: none;
-    }
-
-    #seleccionCategorias{
-        display: block;
-        width: 100%;
-    }
-
-    /* ====== PAGINA DE PELUQUERIA CANINA ========== */
+    /*PAGINA DE PELUQUERIA CANINA*/
 
     .cuerpoPeluqueria, .imgPeluqueria{
         display: block;
@@ -192,31 +182,24 @@
 
     }
     
-/* ======================== NOSOTROS ================ */
+    /* PAGINA DE NOSOTROS*/
 
     .nosotrosInfo{
         display: block;    
-        }
+    }
 
 
 
 
-    /* ============= CONTACTOS ============= */
+    /*PAGINA DE CONTACTOS*/
 
     .titulosContactos{
-    
         background-image: url(../media/img/fondo-perro-760.jpg);
     }
     
-    }
-
-    
 
 
-/* @media (max-width: 480px) {
-    
-
-} */
+} /* ======= CIERRE DE MEDIA MAX-WIDTH 768 PX =======*/
 
 
 @media (max-width: 480px) {
@@ -245,6 +228,7 @@
             width: 100%;
             padding: 0 1rem;
             }
+
         .direcciones{
             display: block;
             text-align: center;
@@ -253,11 +237,6 @@
     }
 
 
-    }
+} /* CIERRE DE MEDIA MAX-WIDTH 480 PX */
 
-
-
-
-
-/* ============ NOSOTROS ========= */
 

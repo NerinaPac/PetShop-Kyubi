@@ -1,6 +1,7 @@
 .cardPet {
     transition: all 0.2s;
     width: 15rem;
+    height: 24rem;
     
     a{
         text-decoration: none;
@@ -11,5 +12,17 @@
         @include interaccionCards;
     }
 
+    .oferta{
+        text-decoration: line-through;
+        font-size: 15px;
+        color: green;       
+    }
+    .ofertaSpan{
+        font-size: 20px;
+        text-align: end;
+        padding: 0.3rem;
+        background-color: $verde;
+        border-radius: 0.5rem;
+    }
 
 }
