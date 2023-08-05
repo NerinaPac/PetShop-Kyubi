@@ -151,16 +151,13 @@ header .menuDesplegableAlimentos li {
 }
 
 .productosDestacados .encabezadoProductosDestacados {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: center;
+  text-align: center;
 }
 .productosDestacados .encabezadoProductosDestacados a {
   color: black;
 }
 .productosDestacados .encabezadoProductosDestacados h2 {
-  font-size: 2rem;
+  font-size: 35px;
 }
 .productosDestacados .cuerpoProductosDestacados {
   display: flex;
@@ -191,7 +188,7 @@ header .menuDesplegableAlimentos li {
 
 .cardPet {
   transition: all 0.2s;
-  width: 17rem;
+  width: 15rem;
 }
 .cardPet a {
   text-decoration: none;
@@ -211,6 +208,7 @@ header .menuDesplegableAlimentos li {
 }
 .peluqueriaPublic .peluqueriaTexto {
   padding: 1rem;
+  max-width: 35rem;
 }
 .peluqueriaPublic img {
   width: 500px;

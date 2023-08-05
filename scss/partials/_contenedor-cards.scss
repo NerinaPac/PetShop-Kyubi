@@ -1,17 +1,14 @@
 .productosDestacados{
 
     .encabezadoProductosDestacados{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        align-items: center;
+        text-align: center;
 
         a{
             color: black;
         }
 
         h2{
-            font-size: 2rem;
+            font-size: $titulosMobile;
         }
     }
 
