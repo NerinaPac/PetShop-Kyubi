@@ -1,0 +1,70 @@
+
+.mainProducto{
+    padding: 2rem 8rem;
+
+    .rutasProducto{
+        display: flex;
+        a{
+            color: grey;
+            text-decoration: none;
+            &:hover{
+                color: black;
+            }
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            
+            li{
+                padding: 0 0.2rem;
+            }
+        }
+    }
+
+    .productoInfoSuperior{
+        display: flex;
+        justify-content: center;
+        .productoImg{
+            display: flex;
+
+            .imgPeques{
+                max-width: 10rem;                
+                
+                .imgPequesContenedor{
+                    border: 1px solid grey;
+                    margin: 0.5rem;
+                }
+            }
+
+            .imgGrande{
+                max-width: 35rem;
+            }
+        }
+
+        form{
+            padding: 1rem 2rem;
+            max-width: 35rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            label, button{
+                margin: 1rem;
+            }
+            select{
+                width: 6rem;
+                align-self: center;
+            }
+            span{
+                font-size: 2rem;
+                font-weight: bold;
+
+            }
+        }
+
+    }
+
+    .descripcionProducto{
+        padding: 2rem 1rem ;
+    }
+
+}

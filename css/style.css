@@ -430,11 +430,85 @@ footer .footerInfo ul li a {
   height: 250px;
 }
 
+/* =========== PAGE PRODUCTOS ========== */
+.mainProducto {
+  padding: 2rem 8rem;
+}
+.mainProducto .rutasProducto {
+  display: flex;
+}
+.mainProducto .rutasProducto a {
+  color: grey;
+  text-decoration: none;
+}
+.mainProducto .rutasProducto a:hover {
+  color: black;
+}
+.mainProducto .rutasProducto ul {
+  display: flex;
+  list-style: none;
+}
+.mainProducto .rutasProducto ul li {
+  padding: 0 0.2rem;
+}
+.mainProducto .productoInfoSuperior {
+  display: flex;
+  justify-content: center;
+}
+.mainProducto .productoInfoSuperior .productoImg {
+  display: flex;
+}
+.mainProducto .productoInfoSuperior .productoImg .imgPeques {
+  max-width: 10rem;
+}
+.mainProducto .productoInfoSuperior .productoImg .imgPeques .imgPequesContenedor {
+  border: 1px solid grey;
+  margin: 0.5rem;
+}
+.mainProducto .productoInfoSuperior .productoImg .imgGrande {
+  max-width: 35rem;
+}
+.mainProducto .productoInfoSuperior form {
+  padding: 1rem 2rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.mainProducto .productoInfoSuperior form label, .mainProducto .productoInfoSuperior form button {
+  margin: 1rem;
+}
+.mainProducto .productoInfoSuperior form select {
+  width: 6rem;
+  align-self: center;
+}
+.mainProducto .productoInfoSuperior form span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.mainProducto .descripcionProducto {
+  padding: 2rem 1rem;
+}
+
 /* ===== MEDIAQUERYS ==== */
 /* @media (max-width: 1050px) {
 
 
 } */
+@media (max-width: 1200px) {
+  .mainProducto {
+    padding: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .mainProducto .productoInfoSuperior {
+    display: block;
+  }
+  .mainProducto .productoInfoSuperior form {
+    text-align: center;
+    margin: auto;
+  }
+}
 @media (max-width: 950px) {
   /* ============ PAGE NOSOTROS =================== */
   .presentacion {
@@ -585,6 +659,16 @@ footer .footerInfo ul li a {
   .mainContactos .direcciones {
     display: block;
     text-align: center;
+  }
+  /* ============ PAGE PRODUCT0S =============== */
+  .mainProducto .imgPeques {
+    display: none;
+  }
+  .mainProducto label, .mainProducto button {
+    margin: 0.2rem;
+  }
+  .mainProducto .descripcionProducto {
+    text-align: justify;
   }
 } /* CIERRE DE MEDIA MAX-WIDTH 480 PX */
 

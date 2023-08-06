@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Bienvenido a nuestra tienda de mascotas! En nuestro Pet shop encontrarás todo lo que necesitas para consentir a tu fiel compañero peludo. Desde alimentos premium hasta juguetes divertidos y accesorios de moda, estamos aquí para satisfacer todas las necesidades de tu amado amigo de cuatro patas. Descubre la mejor selección de productos de alta calidad y el cuidado que merecen tus mascotas. ¡Visítanos ahora y haz que sus colas se agiten de felicidad!">
+    <meta name="keywords" content="Mascotas, Alimentos para mascotas, Juguetes para mascotas, Accesorios para mascotas, Camas para mascotas, Cuidado de mascotas, Gatos, Perros, Peces, Aves, Roedores, Productos para mascotas, Higiene y cuidado de mascotas, Peluquería para mascotas, Tienda de mascotas">
     <title>Producto</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../media/img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../media/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../media/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../media/img/favicon_io/site.webmanifest">
-
-
    <!-- Bootstrap -->
    <link rel="stylesheet" href="../styles-backup/bootstrap.css">
    <!-- estilos customisados -->
    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="textoEnvios">
-            <p>ENVIOS GRATIS EN CABA y ALREDEDORES - 5% OFF PAGANDO EN EFECTIVO</p>
-        </div>
-        
+    <header>      
         <div class="contenedorLogo">
             <a class="aLogo" href="../index.html">
                 <h1>🦊Pet Shop Kyubi</h1>                        
@@ -103,47 +99,66 @@
         </nav>
         
     </header>
-<main>
-    
-    <div class="img-producto">
-        <img src="../media/img/productos/piedras-rubricat.webp" alt="">
-        <div class="img-peques">
-            <img src="../media/img/productos/piedras-rubricat.webp" alt="">
-            <img src="../media/img/productos/piedras-rubricat.webp" alt="">
+<main class="mainProducto">
+    <div class="rutasProducto">
+        <a href="./categorias.html">< Volver</a>
+        <ul class="listaRutasProducto">
+            <li>
+                <a href="./categorias.html">Gatos ></a>
+            </li>
+            <li>
+                <a href="./categorias.html">Alimentos ></a>
+            </li>
+            <li>
+                <a href="./categorias.html">ProPlan</a>
+            </li>
+        </ul>
+    </div>
+    <div class="productoInfoSuperior">
+        <div class="productoImg">
+            <div class="imgPeques">
+                <div class="imgPequesContenedor">
+                    <img src="../media/img/productos/proplan-gatos-adultos-atras.webp" alt="">
+                </div>
+                <div class="imgPequesContenedor">
+                    <img src="../media/img/productos/proplan-gatos-adultos-ingredientes.webp" alt="">
+                </div>
+            </div>
+            <div class="imgGrande">
+                <img  src="../media/img/productos/proplan-gatos-adultos-imgGr.webp" alt="">
+            </div>
         </div>
 
-    </div>
-    <form action="">
-        <h3>Piedras Aglutinantes Rubicat</h3>
-        <span>$500</span>
-        <label for="seleccion-peso">PESO:</label>
-        <select name="seleccion-peso" id="seleccion-peso">
-            <option>1,5 kg</option>
-            <option>5 kg</option>
-            <option>8 kg</option>
-            <option>16 kg</option>
-        </select>
+        <form action="">
+            <h3>Alimento ProPlan para Gatos Adultos</h3>
+            <span>$2100</span>
+            <label for="seleccion-peso">PESO:</label>
+            <select name="seleccion-peso" id="seleccion-peso">
+                <option>1,5 kg</option>
+                <option>5 kg</option>
+                <option>8 kg</option>
+                <option>16 kg</option>
+            </select>
 
-        <label for="seleccion-cantidad">CANTIDAD:</label>
-        <select name="seleccion-cantidad" id="seleccion-cantidad">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-        </select>
-        <button>Comprar ahora</button>
-        <button>Agregar al Carrito</button>
-    </form>
-    <div class="descripcion-producto">
+            <label for="seleccion-cantidad">CANTIDAD:</label>
+            <select name="seleccion-cantidad" id="seleccion-cantidad">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+            <button class="btn">Comprar ahora</button>
+            <button class="btn">Agregar al Carrito</button>
+        </form>
+    </div>
+
+    <div class="descripcionProducto container-fluid">
         <h2>Detalles del Producto</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, expedita veniam sequi dignissimos 
-            assumenda inventore harum error delectus quidem cupiditate, voluptates omnis id sint officiis. 
-            Exercitationem qui sunt nostrum.</p>
-        <h2>Ingredientes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci eos nam architecto ad veniam 
-            libero itaque a? Iste, pariatur! Nesciunt, consequatur inventore earum expedita consequuntur suscipit quaerat est aliquam?</p>
-
-    </div>
+        <p>Purina Pro Plan con OptiPrebio es un alimento balanceado para gatos adultos de 1 a 7 años de edad. Ayuda a optimizar la digestión mediante la correcta absorción de nutrientes;
+             promueve la salud e higiene oral de tu mascota mediante la reducción del sarro dental; también protege la salud del tracto urinario y, al contener pollo 
+             fresco como uno de sus principales ingredientes, provee una fuente ideal de proteínas y aminoácidos.</p>
+       
+       </div>
 
 
 </main>
